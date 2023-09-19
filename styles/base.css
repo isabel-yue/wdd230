@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+
+}
+
+header {
+    background-color: rgb(70, 135, 225);
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-weight: 300;
+}
