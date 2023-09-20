@@ -1,0 +1,51 @@
+@media (min-width: 640px) {
+    
+
+body {
+    font-family: 'Inclusive Sans', sans-serif;
+
+
+}
+
+header {
+    background-color: rgb(70, 135, 225);
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+}
+
+
