@@ -1,7 +1,5 @@
 body {
     font-family: 'Inclusive Sans', sans-serif;
-
-
 }
 
 header {
@@ -12,20 +10,57 @@ header {
     justify-content: center;
 }
 
+img {
+
+    width: 50px;
+    height: auto;
+    padding: 30px;
+}
+
 h1 {
     color: white;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 h2 {
     font-weight: 300;
+    margin: 30px;
+}
+
+h3 {
+    background-color: rgb(70, 135, 225) ;
+    color: white;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+    margin: 0;  
+}
+
+p {
+    padding-left: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    column-gap: 20px;
+    margin: 30px;
+}
+
+section {
+    border-right: 2px groove;
+    border-left: 2px groove;
+    border-bottom: 2px groove;
+    border-top: 2px groove;
+    margin-bottom: 20px;
 }
 
 nav {
     background-color: #36454f;
-    margin: 0 auto;
     max-width: 880px;
+    display: block;
+    overflow: hidden;
 }
 
 nav ul {
@@ -41,7 +76,30 @@ nav a {
 }
 
 .active {
-    color: grey
+    color: darkgray;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style-type:none;
+}
+
+img.hk {
+    width: 50px;
+    height: auto;
+    padding: 0px;
+}
+
+p.footer {
+    padding: 0px;
+    margin: 0;
 }
 
 

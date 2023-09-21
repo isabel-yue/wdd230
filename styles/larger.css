@@ -3,13 +3,18 @@
 
 body {
     font-family: 'Inclusive Sans', sans-serif;
-
-
 }
 
 header {
     background-color: rgb(70, 135, 225);
     padding: 20px;
+}
+
+img {
+
+    width: 100px;
+    height: auto;
+    padding: 30px;
 }
 
 h1 {
@@ -20,24 +25,56 @@ h1 {
 
 h2 {
     font-weight: 300;
+    padding: 50 px;
+    margin: 30px;
 }
 
-.card {
+h3 {
+    background-color: rgb(70, 135, 225) ;
+    color: white;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 50px;
+    margin: 30px;
+    
+ }
+
+section {
+    border-right: 2px groove;
+    border-left: 2px groove;
+    border-bottom: 2px groove;
+    border-top: 2px groove;
 }
 
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     overflow: hidden;
     background-color: #333;
+    display: block;
+    max-width: 2000px;
   }
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
   
-
-
-  nav ul {
+nav ul {
     display: flex;
     justify-content: space-evenly;
   }
@@ -46,6 +83,32 @@ nav ul li {
     flex: 1 1 100%;
 }
 
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style-type:none;
+}
+
+img.hk {
+    width: 50px;
+    height: auto;
+    padding: 0px;
+}
+
+p.footer {
+    padding: 0px;
+    margin: 0;
+}
+
+footer {
+    display: inline-block;
+}
 }
 
 
