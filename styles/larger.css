@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Manrope&family=Roboto:wght@100&display=swap');
 @media (min-width: 640px) {
     
-
+/* html selector*/
 body {
-    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 header {
@@ -11,7 +12,6 @@ header {
 }
 
 img {
-
     width: 100px;
     height: auto;
     padding: 30px;
@@ -20,35 +20,29 @@ img {
 h1 {
     color: white;
     text-align: center;
-    
+    font-family: 'Inclusive Sans', sans-serif;
 }
 
 h2 {
     font-weight: 300;
-    padding: 50 px;
-    margin: 30px;
+    margin: 70px;
+    font-family: 'Inclusive Sans', sans-serif;
 }
 
 h3 {
+    font-family: 'Inclusive Sans', sans-serif;
     background-color: rgb(70, 135, 225) ;
     color: white;
     text-align: center;
     width: auto;
     margin: 0;
     padding: 20px;
+
 }
 
 p {
-    padding-left: 10px;
+    padding-left: 30px;
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-column-gap: 50px;
-    margin: 30px;
-    
- }
 
 section {
     border-right: 2px groove;
@@ -58,12 +52,14 @@ section {
 }
 
 nav {
+    font-family: 'Inclusive Sans', sans-serif;
     width: 100%;
     overflow: hidden;
     background-color: #333;
     display: block;
     max-width: 2000px;
-  }
+    margin: 0px;
+}
 
 nav a {
     display: block;
@@ -77,11 +73,17 @@ nav a {
 nav ul {
     display: flex;
     justify-content: space-evenly;
+    margin: 0px;
   }
 
 nav ul li {
     flex: 1 1 100%;
+    padding: 20px;
 }
+
+li:hover {
+    background-color: lightslategray;
+} 
 
 ul {
     margin-block-start: 1em;
@@ -93,22 +95,30 @@ ul {
 
 li {
     list-style-type:none;
-}
-
-img.hk {
-    width: 50px;
-    height: auto;
-    padding: 0px;
-}
-
-p.footer {
-    padding: 0px;
-    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
 }
 
 footer {
-    display: inline-block;
+    display: block;
+    background-color: #36454f;
+    max-width: 2000px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
 }
+/*Class Selector*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr; 
+    grid-column-gap: 100px;
+    margin: 70px;
+    
+ }
+
+
 }
 
 
