@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap');
+
+h1 {
+    font-family: 'Heebo 600', sans-serif; 
+}
+h2, h3 {
+    font-family: 'Heebo 500', sans-serif;
+ }
+
+h4 {
+    font-family: 'Heebo 400', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif; 
+    padding: 20px; 
+   
+}
+
+section{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.color {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.orange {
+    height: 100px;
+    width: 100px;
+    background-color:#fb8500 ;
+}
+
+.darkBlue {
+    height: 100px;
+    width: 100px;
+    background-color: #023047;
+}
+.black {
+    height: 100px;
+    width: 100px;
+    background-color: #000000;
+}
+
+.white {
+    height: 100px;
+    width: 100px;
+    background-color: #fdfdfd;
+    border: 0.25px solid;
+    box-shadow: 1px 1px;
+    
+}
+
+.wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.desktop {
+    width: 500px;
+    height: auto;
+}
+.mobile {
+    width: 300px;
+    height: auto;
+}
+
