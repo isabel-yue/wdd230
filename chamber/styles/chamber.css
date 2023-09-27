@@ -2,6 +2,7 @@
 
 h1 {
     font-family: 'Heebo 600', sans-serif; 
+    color: white;
 }
 h2, h3 {
     font-family: 'Heebo 500', sans-serif;
@@ -11,11 +12,18 @@ h4 {
     font-family: 'Heebo 400', sans-serif;
 }
 
+header {
+    background-color: rgb(70, 135, 225);
+    padding: 20px;
+}
+
+
 body {
     font-family: 'Lato', sans-serif; 
     padding: 20px; 
    
 }
+
 
 section{
     padding-bottom: 20px;
