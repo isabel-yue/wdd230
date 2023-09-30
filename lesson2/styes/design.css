@@ -9,9 +9,13 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
-	padding: 1rem;
-	background-color: #eee;
+div.banner {
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: rgb(230, 243, 254);
+    font-weight: 700;
+    word-break: break-word;
+    text-align: center;
 }
 
 h1 {
@@ -31,6 +35,11 @@ h2 {
     
 }
 
+h3.list {
+    margin-bottom: 0.5rem;
+    padding-left: 25px;
+}
+
 article p {
 	text-align: justify;
 }
@@ -39,6 +48,10 @@ article p {
 	color: #ffffff;
 	background-color: #125181;
     padding: 1.5rem;
+}
+
+section {
+    padding: 1rem;
 }
 
 footer {
