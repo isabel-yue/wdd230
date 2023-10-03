@@ -43,6 +43,14 @@ p {
     padding-left: 30px;
 }
 
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black
+}
+
 section {
     border-right: 2px groove;
     border-left: 2px groove;
