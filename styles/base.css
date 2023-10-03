@@ -27,7 +27,8 @@ h1 {
 h2 {
     font-family: 'Inclusive Sans', sans-serif;
     font-weight: 300;
-    margin: 50px;
+    padding: 30px;
+    margin-block: auto;
 }
 
 h3 {
@@ -111,11 +112,6 @@ li {
     padding-right: 30px;
 }
 
-img.hk {
-    width: 50px;
-    height: auto;
-    padding: 0px;
-}
 
 p.footer {
     padding: 0px;
@@ -129,6 +125,74 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+/* small navigation view */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: .25rem .75rem;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "\00d7";
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.nav li {
+	display: none;
+}
+.nav li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.nav li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: " 💛 ";
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 4rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+
+
 
 
 
