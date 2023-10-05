@@ -52,7 +52,6 @@ p {
     grid-column-gap: 10px;
     column-gap: 20px;
     margin-block: auto;
-    padding: 30px;
 }
 
 section {
@@ -165,11 +164,7 @@ footer {
 	text-decoration: none;
 	color: #fff;
 }
-.nav li a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
+
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
@@ -188,7 +183,7 @@ footer {
 	position: absolute;
 	top: 1rem;
 	right: 4rem;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	cursor: pointer;
 }
 
