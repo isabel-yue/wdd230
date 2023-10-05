@@ -1,50 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap');
-
-
-h1{
-    font-family: 'Heebo';
+@media only screen and (min-width:32rem) {
+    h1,h2,h3 {
+        font-family: 'Heebo';
+    }
+    
+    
+    a:link {
+        color: black;
+    }
+    
+    a:visited {
+        color: black
+    }
+    
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    .menuMain {
+        justify-content: space-evenly;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        justify-content: space-evenly;
+    }
+    
+    li {
+        list-style-type:none;
+        font-family: 'Lato';
+    }
+    
+    li a {
+        text-decoration: none;
+    }
 }
 
-h2 {
-    font-family: 'Heebo';
-}
 
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: black
-}
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-}
-.menuMain {
-    justify-content: space-evenly;
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    justify-content: space-evenly;
-}
-
-li {
-    list-style-type:none;
-    font-family: 'Lato';
-}
 
 
 

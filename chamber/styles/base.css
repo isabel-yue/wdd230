@@ -1,1 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap');
+
+h1, h2, h3, a {
+    font-family: 'Heebo';
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+ul {
+    display: grid;
+    flex-direction: column;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black
+}
+
+img {
+   height: auto;
+   width: auto;
+}
