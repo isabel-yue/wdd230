@@ -1,53 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap');
 @media only screen and (min-width:32rem) {
-    h1,h2,h3 {
+
+    h1,
+    h2,
+    h3 {
         font-family: 'Heebo';
     }
-    
-    
-    a:link {
+
+
+    .head {
+        display: inline;
+    }
+
+    li {
         color: black;
     }
-    
-    a:visited {
-        color: black
+    .action {
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        font-family: 'Heebo';
+        font-weight: 600;
+        font-size: 30px;
     }
-    
-    .head {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        margin: 0px;
-    }
-    .menuMain {
-        justify-content: space-evenly;
-    }
-    
-    nav a {
+
+    .logo {
         display: block;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 20px;
-        justify-content: space-evenly;
+        width: 30%;
+        height: auto;
+    }
+    .join {
+        position: absolute;
+        bottom: 50px;
+    }
+   
+    .hero {
+        aspect-ratio: 16/9 ;
+    }
+    .view {
+        margin-left: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-column-gap: 100px;
+        margin-block: auto;
+        padding: 30px;
+     }
+
+    /* larger view navigation */
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+    .navigation {
+        flex-direction: row;
     }
     
-    li {
-        list-style-type:none;
-        font-family: 'Lato';
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+       
     }
-    
-    li a {
-        text-decoration: none;
+
+    ul {
+        padding: 0px;
     }
+
 }
-
-
-
-
-
