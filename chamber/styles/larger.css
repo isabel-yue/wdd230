@@ -31,15 +31,13 @@
     }
     .join {
         position: absolute;
-        bottom: 50px;
+        bottom: 150px;
     }
    
     .hero {
         aspect-ratio: 16/9 ;
     }
-    .view {
-        margin-left: 30px;
-    }
+    
 
     .grid {
         display: grid;
