@@ -44,12 +44,10 @@ p {
 }
 
 a:link {
-    color: black;
+    color: b;
 }
 
-a:visited {
-    color: black
-}
+
 
 section {
     border-right: 2px groove;
