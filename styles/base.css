@@ -11,11 +11,37 @@ header {
     justify-content: center;
 }
 
-img {
 
+.profile{
     width: 100px;
     height: auto;
     padding: 30px;
+}
+picture {
+    width: 100%;
+    height: auto;
+}
+.hero {
+    width: 100%;
+    height: auto;
+    padding: auto
+}
+
+
+.herolabel {
+	position: absolute;
+	top: 230px;
+	left: 20px;
+	opacity: 0.7;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+    color: #36454f;
+	padding: .25rem;
+	font-size: 0.5rem;
+	font-family:"inclusive Sans", sans-serif;
 }
 
 h1 {
@@ -124,6 +150,12 @@ footer {
     padding: 20px;
     color: #fff;
     text-align: center;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* small navigation view */

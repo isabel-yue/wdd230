@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Isabel Yue">
     <meta name="description" content="WDD230 Web Frontend Development Isabel Yue Course Assignment Portal">
-    <title>Isabel Yue - WDD230  - Web Frontend Development</title>
+    <title>Isabel Yue - WDD230 - Web Frontend Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto:wght@100&display=swap"
@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <img src="images/me.jpeg" alt="My profile picture">
+        <img class="profile" src="images/me.webp" alt="My profile picture" >
         <h1>Isabel Yue</h1>
         <button id="mode"></button>
     </header>
@@ -38,6 +38,14 @@
         </ul>
     </nav>
     <main>
+        <picture>
+            <source srcset="images/hero_small.webp" media="(max-width: 400px )">
+            <source srcset="images/hero_medium.webp" media="(max-width: 960px)">
+            <img class="hero" src="images/hero_large.webp" alt="Washington DC Temple" width="auto" height="auto">
+        </picture>
+        <div class="herolabel">
+			<p>Washington DC Temple</p>
+		</div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="grid">
             <section class="card">
@@ -47,7 +55,8 @@
                             href="lesson1/week1/mediaQuery/media-query.html"> Media Query </a></li>
                     <li>Week 02:<a href="lesson2/bom.html">DOM Manipulation</a> | <a href="lesson2/menu.html">Hamburger
                             Menu</a> | <a href="lesson2/design.html"> Design Principles</a></li>
-                    <li>Week 03:<a href="lesson3/images/landscape.webp">WebP</a> | <a href="lesson3/lazyload.html">Lazy Load</a> | <a href="lesson3/responsive-images.html"> Responsive Images</a></li>
+                    <li>Week 03:<a href="lesson3/images/landscape.webp">WebP</a> | <a href="lesson3/lazyload.html">Lazy
+                            Load</a> | <a href="lesson3/responsive-images.html"> Responsive Images</a></li>
                     <li>Week 04:<a href=""></a></li>
                     <li>Week 05:<a href="#"></a></li>
                     <li>Week 06:<a href="#"></a></li>
@@ -60,6 +69,11 @@
                 <p>Page Visits: 10</p>
             </section>
         </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236149.94382289352!2d114.02239907939729!3d22.35956106256625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2z6aaZ5riv!5e0!3m2!1szh-TW!2sus!4v1697553244636!5m2!1szh-TW!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </main>
     <footer>
         <p>&copy; <span id="year"> </span> | Isabel Yue | Hong Kong </p>

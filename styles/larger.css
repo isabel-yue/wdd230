@@ -11,7 +11,7 @@ header {
     padding: 20px;
 }
 
-img {
+.profile {
     width: 150px;
     height: auto;
     padding: 30px;
@@ -43,9 +43,7 @@ p {
     padding-left: 30px;
 }
 
-a:link {
-    color: b;
-}
+
 
 
 
@@ -62,7 +60,7 @@ nav {
     overflow: hidden;
     background-color: #333;
     display: block;
-    max-width: 2000px;
+    max-width: 100%;
     margin: 0px;
 }
 
@@ -73,6 +71,38 @@ nav a {
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
+}
+
+picture {
+    width: 100%;
+    height: auto;
+}
+.hero{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 400px;
+	left: 20px;
+	opacity: 0.7;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+    color: #252a2e;
+	padding: .25rem;
+	font-size: 1rem;
+	font-family:"inclusive Sans", sans-serif;
 }
   
 nav ul {
@@ -106,7 +136,11 @@ li {
     padding-bottom: 10px;
     padding-right: 30px;
 }
-
+iframe {
+    display: block;
+    width: 100%;
+    
+}
 footer {
     display: block;
     background-color: #36454f;
