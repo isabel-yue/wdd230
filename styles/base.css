@@ -16,6 +16,7 @@ header {
     width: 100px;
     height: auto;
     padding: 30px;
+    align-items: left;
 }
 picture {
     width: 100%;
