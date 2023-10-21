@@ -38,7 +38,7 @@ a:visited {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 24px;
     color: #023047;
     padding: 30px;
 }
@@ -88,8 +88,8 @@ picture {
 .description {
     font-size: 14px;
     position: absolute;
-    left: 2px;
-    top: 70px;
+    left: 25px;
+    top: 120px;
 }
 
 .join {
@@ -102,8 +102,8 @@ picture {
     padding-bottom: 15px;
     border-radius: 30px;
     color: white;
-    bottom: 20px;
-    left: 25px;
+    bottom: 50px;
+    left: 50px;
 
 
 }
