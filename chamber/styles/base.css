@@ -3,8 +3,9 @@
 h1,
 h2,
 h3,
-a {
+a{
     font-family: 'Heebo';
+    color: #023047;
 }
 
 p{
@@ -149,13 +150,14 @@ h2 {
     padding: 20px;
     border-left: 6px solid rgb(251, 133, 0);
 }
-
+#visit {
+    border-style: outset;
+    padding: 20px;
+}
 #visits {
     font-family: 'Heebo';
     font-size: 20px;
-    color: #023047;;
-    border-style: outset;
-    padding: 30px;
+   
 }
 
 .content {
