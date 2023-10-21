@@ -25,7 +25,7 @@
                 <button id="menu"></button>
                 <ul class="navigation">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join Now</a></li>
                     <li><a href="#">Login</a></li>
@@ -35,8 +35,13 @@
     </header>
     <main>
         <div class="container">
-            <img class="hero" src="images/heroimage.webp" alt="">
-            <div class="action"><h1>Become the member of <br> Boise Chamber of Commerce Today</h1> </div>
+        <picture>
+            <source srcset="images/heroimage_small.webp" media="(max-width: 400px)">
+            <source srcset="images/heroimage_medium.webp" media="(max-width: 960px)">
+            <img class="hero" src="images/heroimage.webp" alt="" loading="lazy" width="1440" height="960">
+        </picture>
+            <div class="action"><h1>Become the member of <br> Boise Chamber of Commerce Today</h1>
+                <p class="description">Join the Boise Chamber of Commerce to unlock countless opportunities for networking, growth, and success!</p> </div>
             <div class="join">Join Now</div>
         </div>
         <div class="grid">

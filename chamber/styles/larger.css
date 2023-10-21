@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap');
-@media only screen and (min-width:32rem) {
+@media only screen and (min-width:640px) {
 
     h1,
     h2,
     h3 {
         font-family: 'Heebo';
+        color: #023047;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 22px;
+        padding: 30px;
+        color: #023047;
     }
-
+    p {
+        font-family: 'lato';
+        text-align: left;
+    }
     .head {
         display: inline;
     }
@@ -21,27 +27,52 @@
     .action {
         position: absolute;
         top: 80px;
-        left: 20px;
+        left: 50px;
         font-family: 'Heebo';
         font-weight: 600;
         font-size: 30px;
+        padding: 10px;
     }
 
+    .description {
+        font-size: 20px;
+        position: absolute;
+        left: 40px;
+        top: 150px;
+    }
+
+    .attractions {
+        padding: 20px;
+        border-left: 6px solid rgb(251, 133, 0);
+    }
+
+   
     .logo {
         display: block;
         width: 30%;
         height: auto;
-        
     }
     .join {
         position: absolute;
-        bottom: 60px;
+        left: 80px;
+        bottom: 120px;
     }
    
-    .hero {
-        aspect-ratio: 16/9 ;
+    .local {
+        max-width: 100%;
+        height: auto;
     }
+
+    .local:hover
+     {box-shadow: 0 0 10px #333;}
     
+    .content {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-column-gap: 80px;
+        margin-block: auto;
+        padding: 30px;
+    }
 
     .grid {
         display: grid;
@@ -50,6 +81,8 @@
         margin-block: auto;
         padding: 30px;
      }
+
+     
 
     /* larger view navigation */
     #menu {

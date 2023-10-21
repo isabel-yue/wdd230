@@ -18,3 +18,18 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
+
+
+//let numVisits =0;
+//if (localStorage.getItem(`numVisits`)) {
+//numVisits = parseInt(localStorage.getItem(`numVisits`));
+//numVisits ++
+//}
+
+// set local storage with number of visits
+
+//localstorage.setItem(`numVisits`, numVisits);
+
+//display number of visits
+//let numVisitsSpan = document.querySelector(`#number-of-visits);
+//numVisitsSpan.textContent = numVisists;

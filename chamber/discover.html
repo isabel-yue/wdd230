@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isabel Yue">
+    <meta name="description" content="Isabel Yue WDD230 - Boise Chamber Of Commerce Site">
+    <title>Boise Chamber of Commerce Site</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/boiseicon.ico">
+    <meta property="og:title" content="Isabel Yue WDD230 - Boise Chamber Of Commerce Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://boisedev.com/wp-content/uploads/2022/01/242618877_221224343364504_2663931937076728879_n.png">
+    <meta property="og:url" content="https://isabel-yue.github.io/wdd230_fall23/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img class="logo" src="images/bosielogo.png" alt="">
+            <nav>
+                <button id="menu"></button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join Now</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 id="discover">Come discover the beautiful Boise here!</h1>
+        <div class="content">
+            <div class="sidebar">
+                <section>
+                    <h2>Attractions</h2>
+                    <div class="attractions">
+                        <h3>Idaho State Capitol Building</h3>
+                        <img src="images/idaho_state_capitol_building.webp" alt="idaho_state_capitol_building"
+                            loading="lazy" width="360" height="240">
+                        <p>This building, in classic style and an attractive miniature version of the U.S. Capital, was
+                            recently renovated to celebrate its hundredth birthday</p>
+                        <div class="view"> See More</div>
+                    </div>
+                    <div class="attractions">
+                        <h3>Old Idaho Penitentiary</h3>
+                        <img src="images/Old_Idaho_Penitentiary.webp" alt="Old_Idaho_Penitentiary" loading="lazy"
+                            width="360" height="240">
+                        <p>Now our doors are open for visitors to explore over 100 years of Idaho's unique prison
+                            history!</p>
+                        <div class="view"> See More</div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Demographics</h2>
+                    <div class="demographics">
+                        <table>
+                            <tr>
+                                <th>Category</th>
+                                <th>Statistics</th>
+                            </tr>
+                            <tr>
+                                <td>Population</td>
+                                <td>228,790</td>
+                            </tr>
+                            <tr>
+                                <td>Median Age</td>
+                                <td>35.3 years</td>
+                            </tr>
+                            <tr>
+                                <td>Median Household Income</td>
+                                <td>$55,753</td>
+                            </tr>
+                            <tr>
+                                <td>Ethnicity</td>
+                                <td>88.1% White, 2.1% African American, 2.5% Asian, 4.3% Hispanic</td>
+                            </tr>
+                            <tr>
+                                <td>Education</td>
+                                <td>92.4% High School Graduates, 41.5% Bachelor's Degree or Higher</td>
+                            </tr>
+                            <tr>
+                                <td>Employment</td>
+                                <td>Unemployment Rate: 2.8%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Events</h2>
+                    <div class="events">
+                        <div class="event">
+                            <h2>TED Talk for Start Up Business</h2>
+                            <p class="event-date">Date: November 15, 2023</p>
+                            <p>Time: 9:00 AM - 12:00 PM</p>
+                            <p>Location: Boise Convention Center</p>
+                            <p>Description:Come and learn more about how to make your start up successful!</p>
+                        </div>
+
+                        <div class="event">
+                            <h2>Thanksgiving Dinner </h2>
+                            <p class="event-date">Date: November 20, 2023</p>
+                            <p>Time: 5:30 PM - 8:00 PM</p>
+                            <p>Location: Boise Chamber of Commerce Office</p>
+                            <p>Description: Let celebrate Thanksgiving with the community!</p>
+                        </div>
+                    </div>
+                </section>
+                <div id="visits">
+                    <h4>Page Vsit:</h4>
+                    <span id="visits"> </span>
+                </div>
+            </div>
+            <div class="images">
+                <h2>Gallery</h2>
+                <picture>
+                    <source srcset="images/local_image1_small.webp" media="(max-width: 400px )">
+                    <source srcset="images/local_image1_medium.webp" media="(max-width: 960px)">
+                    <img class="local" src="images/local_image1_large.webp" alt="" loading="lazy" width="1440"
+                        height="960">
+                </picture>
+                <p>Downtown Boise</cp>
+                    <picture>
+                        <source srcset="images/local_image2_small.webp" media="(max-width: 400px )">
+                        <source srcset="images/local_image2_medium.webp" media="(max-width: 960px)">
+                        <img class="local" src="images/local_image2_large.webp" alt="" loading="lazy" width="1440"
+                            height="960">
+                    </picture>
+                <p>Downtown Boise</p>
+                <picture>
+                    <source srcset="images/local_image3_small.webp" media="(max-width: 400px )">
+                    <source srcset="images/local_image3_medium.webp" media="(max-width: 960px)">
+                    <img class="local" src="images/local_image3_large.webp" alt="" loading="lazy" width="1440"
+                        height="960">
+                </picture>
+                <p>Downtown Boise</p>
+                <picture>
+                    <source srcset="images/local_image4_small.webp" media="(max-width: 400px )">
+                    <source srcset="images/local_image4_medium.webp" media="(max-width: 960px)">
+                    <img class="local" src="images/local_image4_large.webp" alt="" loading="lazy" width="1440"
+                        height="960">
+                </picture>
+                <p>Downtown Boise</p>
+                <picture>
+                    <source srcset="images/local_image5_small.webp" media="(max-width: 400px )">
+                    <source srcset="images/local_image5_medium.webp" media="(max-width: 960px)">
+                    <img class="local" src="images/local_image5_large.webp" alt="" loading="lazy" width="1440"
+                        height="960">
+                </picture>
+                <p>Downtown Boise</p>
+                <picture>
+                    <source srcset="images/local_image6_small.webp" media="(max-width: 400px )">
+                    <source srcset="images/local_image6_medium.webp" media="(max-width: 960px)">
+                    <img class="local" src="images/local_image6_large.webp" alt="" loading="lazy" width="1440"
+                        height="960">
+                </picture>
+                <p>Downtown Boise</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Contact: <br>info@boisechambercommerce.org | (208) 432 1234</p>
+        <p>&copy; <span id="year"> </span> | Isabel Yue | Project for WDD230 </p>
+        <p> Last Modified: <span id="lastModified"> </span> </p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>

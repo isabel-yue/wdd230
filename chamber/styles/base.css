@@ -7,7 +7,7 @@ a {
     font-family: 'Heebo';
 }
 
-p {
+p{
     font-family: 'lato';
 }
 
@@ -38,15 +38,29 @@ a:visited {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
+    color: #023047;
+    padding: 30px;
+}
+
+#discover {
+    padding: 20px;
+    font-size: 35px;
+}
+picture {
+    width: 100%;
+    height: auto;
+}
+
+.local {
+    width: 100%;
+    height: auto;
 }
 
 .hero {
-    border-radius: 30px;
     display: block;
     width: 100%;
     height: auto;
-
 }
 
 .logo {
@@ -71,6 +85,13 @@ h1 {
     color: #023047;
 }
 
+.description {
+    font-size: 14px;
+    position: absolute;
+    left: 2px;
+    top: 70px;
+}
+
 .join {
     position: absolute;
     background-color: #023047;
@@ -81,15 +102,20 @@ h1 {
     padding-bottom: 15px;
     border-radius: 30px;
     color: white;
-    bottom: 40px;
+    bottom: 20px;
     left: 25px;
 
 
+}
+p {
+    display: inline-block;
 }
 
 .card {
     margin: 20px;
 }
+
+
 
 h2 {
     font-weight: 500;
@@ -108,12 +134,81 @@ h2 {
     border-radius: 30px;
     color: white;
 }
+.attractions {
+    padding: 20px;
+    border-left: 6px solid rgb(251, 133, 0);
+    max-width: 360px;
+}
+
+.demographics {
+    padding: 20px;
+    border-left: 6px solid #023047;
+}
+
+.events {
+    padding: 20px;
+    border-left: 6px solid rgb(251, 133, 0);
+}
+
+#visits {
+    font-family: 'Heebo';
+    font-size: 20px;
+    color: #023047;;
+    border-style: outset;
+    padding: 30px;
+}
+
+.content {
+    padding: 20px;
+}
 
 footer {
     background-color: #fb8500;
     color: #023047;
     padding: 50px;
     text-align: left;
+}
+
+/*table*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Lato';
+}
+
+th {
+    background-color: #f2f2f2;
+    font-family: 'Heebo';
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*event*/
+.event {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.event h2 {
+    margin: 0;
+}
+
+.event p {
+    margin: 0;
+}
+
+.event-date {
+    font-weight: bold;
 }
 
 /* small navigation view */

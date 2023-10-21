@@ -1,187 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Manrope&family=Roboto:wght@100&display=swap');
 @media (min-width: 640px) {
-    
-/* html selector*/
-body {
-    font-family: 'Manrope', sans-serif;
+
+    /* html selector*/
+    body {
+        font-family: 'Manrope', sans-serif;
+    }
+
+    header {
+        background-color: rgb(70, 135, 225);
+        padding: 20px;
+    }
+
+    .profile {
+        width: 150px;
+        height: auto;
+        padding: 30px;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Inclusive Sans', sans-serif;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-family: 'Inclusive Sans', sans-serif;
+    }
+
+    h3 {
+        font-family: 'Inclusive Sans', sans-serif;
+        background-color: rgb(70, 135, 225);
+        color: white;
+        text-align: center;
+        width: auto;
+        margin: 0;
+        padding: 20px;
+
+    }
+
+    p {
+        padding-left: 30px;
+    }
+
+    section {
+        border-right: 2px groove;
+        border-left: 2px groove;
+        border-bottom: 2px groove;
+        border-top: 2px groove;
+    }
+
+    nav {
+        font-family: 'Inclusive Sans', sans-serif;
+        width: 100%;
+        overflow: hidden;
+        background-color: #333;
+        display: block;
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    nav a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    picture {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .herolabel {
+        position: absolute;
+        top: 400px;
+        left: 20px;
+        opacity: 0.7;
+        /* Buenas */
+    }
+
+    .herolabel p {
+        margin: 0;
+        color: #252a2e;
+        padding: .25rem;
+        font-size: 1rem;
+        font-family: "inclusive Sans", sans-serif;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px;
+    }
+
+    nav ul li {
+        background-color: #333;
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    nav li:hover {
+        background-color: lightslategray;
+    }
+
+    ul {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    li {
+        list-style-type: none;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+
+    }
+
+    footer {
+        display: block;
+        background-color: #36454f;
+        max-width: 2000px;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    /*Class Selector*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-column-gap: 100px;
+        margin-block: auto;
+        padding: 30px;
+
+    }
+
+
+    /* larger view navigation */
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
 }
-
-header {
-    background-color: rgb(70, 135, 225);
-    padding: 20px;
-}
-
-.profile {
-    width: 150px;
-    height: auto;
-    padding: 30px;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Inclusive Sans', sans-serif;
-}
-
-h2 {
-    font-weight: 300;
-    font-family: 'Inclusive Sans', sans-serif;
-}
-
-h3 {
-    font-family: 'Inclusive Sans', sans-serif;
-    background-color: rgb(70, 135, 225) ;
-    color: white;
-    text-align: center;
-    width: auto;
-    margin: 0;
-    padding: 20px;
-
-}
-
-p {
-    padding-left: 30px;
-}
-
-
-
-
-
-section {
-    border-right: 2px groove;
-    border-left: 2px groove;
-    border-bottom: 2px groove;
-    border-top: 2px groove;
-}
-
-nav {
-    font-family: 'Inclusive Sans', sans-serif;
-    width: 100%;
-    overflow: hidden;
-    background-color: #333;
-    display: block;
-    max-width: 100%;
-    margin: 0px;
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-picture {
-    width: 100%;
-    height: auto;
-}
-.hero{
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
-.hero img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.herolabel {
-	position: absolute;
-	top: 400px;
-	left: 20px;
-	opacity: 0.7;
-	/* Buenas */
-}
-
-.herolabel p {
-	margin: 0;
-    color: #252a2e;
-	padding: .25rem;
-	font-size: 1rem;
-	font-family:"inclusive Sans", sans-serif;
-}
-  
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px;
-  }
-
-nav ul li {
-    background-color: #333;
-    flex: 1 1 100%;
-    padding: 20px;
-}
-
-nav li:hover {
-    background-color: lightslategray;
-} 
-
-ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-
-li {
-    list-style-type:none;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-}
-iframe {
-    display: block;
-    width: 100%;
-    
-}
-footer {
-    display: block;
-    background-color: #36454f;
-    max-width: 2000px;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
-/*Class Selector*/
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr; 
-    grid-column-gap: 100px;
-    margin-block: auto;
-    padding: 30px;
-  
- }
-
-
-/* larger view navigation */
-
-#menu {
-    display: none; /* hide hamburger button */
-}
-
-.nav {
-    flex-direction: row;
-}
-
-.nav li {
-    display: block;
-    flex: 1 1 100%;
-}
-
-#mode {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 2rem;
-	cursor: pointer;
-}
-
-}
-
