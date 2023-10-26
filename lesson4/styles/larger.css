@@ -24,8 +24,10 @@
 
 /*----------- MAIN --------------*/
 
+form label.sbs {
+  padding: .3rem 0;
 
-
+}
 /*----------- FOOTER --------------*/
 
 } /* end of media query */
