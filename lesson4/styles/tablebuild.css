@@ -1,0 +1,44 @@
+:root {
+    --border: hsla(0, 0%, 20%, .8);
+    --borderlight: hsla(0, 1%, 73%, 0.3);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #000;
+    color: #fff;
+}
+
+tbody {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+font-size: larger;
+}
+
+
+tr:nth-child(even) {
+    background-color: var(--borderlight);
+}
+
+th:first-child {
+    background-color: black;
+}
