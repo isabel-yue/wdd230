@@ -42,3 +42,7 @@ tr:nth-child(even) {
 th:first-child {
     background-color: black;
 }
+
+td:first-child {
+    font-weight: bold;
+}
