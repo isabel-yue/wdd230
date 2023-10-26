@@ -10,9 +10,10 @@ caption {
 }
 
 table {
-    margin: 10px auto;
+    margin: 0px auto;
     border: thin solid var(--border);
     border-collapse: collapse;
+
 }
 
 thead {
