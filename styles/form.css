@@ -1,0 +1,60 @@
+div {
+    margin: .25em;
+}
+
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+form label.top input {
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+fieldset {
+    padding: 20px;
+    max-width: 50%;
+
+}
+
+label.top {
+    display: inline-block;
+    width: 150px;
+}
+form label.top input:required {
+    border-bottom: rgb(162, 33, 33) solid 6px;
+    
+}
+form label.top input:required:valid {
+    border-bottom:rgb(70, 135, 225)  solid 6px;
+
+}
+
+form {
+    margin: 1em;
+}
+label {
+    display: inline-block;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: rgb(70, 135, 225) ;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1em;
+    width: 96%;
+    max-width: 20rem;
+}
+
+
+

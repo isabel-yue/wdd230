@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isabel Yue">
+    <meta name="description" content="WDD230 Web Frontend Development Isabel Yue Course Assignment Portal">
+    <title>Isabel Yue - WDD230 - Web Frontend Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Isabel Yue WDD230 - Web Frontend Development Course Assignment Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.britannica.com/75/156475-050-D97BBA64/Skyline-Hong-Kong.jpg">
+    <meta property="og:url" content="https://isabel-yue.github.io/wdd230">
+
+</head>
+
+<body>
+    <header>
+        <img class="profile" src="images/me.webp" alt="My profile picture">
+        <h1>Isabel Yue</h1>
+        <button id="mode"></button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="chamber/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="formmessage"></div>
+        <h2>Give us a rating!</h2>
+        <form method="get" action="record.html">
+            <fieldset>
+                <label class="top" for="username">Username*️⃣ <input type="text" id="username" required></label>
+                <label class="top" for="pwd"> Password*️⃣ <input type="password" id="pwd" name="pwd" required
+                        pattern="[A-Za-z0-9].{7,}"
+                        title="Must be at least 8 characters long with alphbets and numbers only"></label>
+                <label class="top" for="pwd2"> Confirm Password*️⃣ <input type="password" id="pwd2" name="pwd2" required
+                        pattern="[A-Za-z0-9].{8,}"></label>
+                <span id="pwdMatchError" class="error-message"></span>
+                <label class="top" for="email">Email*️⃣ <input type="email" id="email" name="email" required
+                        pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label class="top" for="r">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <input type="submit" value="Save" class="submitBtn">
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"> </span> | Isabel Yue | Hong Kong </p>
+        <p> Last Modified: <span id="lastModified"> </span> </p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script>
+        const rangevalue = document.getElementById("rangevalue");
+        const range = document.getElementById("r");
+
+        // RANGE event listener
+        range.addEventListener('change', displayRatingValue);
+        range.addEventListener('input', displayRatingValue);
+
+        function displayRatingValue() {
+            rangevalue.innerHTML = range.value;
+
+        }
+
+        const pwdInput = document.getElementById("pwd");
+        const pwd2Input = document.getElementById("pwd2");
+        const pwdMatchError = document.getElementById("pwdMatchError");
+
+        // Add an event listener to the Confirm Password input
+        pwd2Input.addEventListener("input", function () {
+            if (pwd2Input.value === pwdInput.value) {
+                pwd2Input.setCustomValidity(""); // Clear custom validation message
+                pwdMatchError.textContent = ""; // Clear the error message
+            } else {
+                pwd2Input.setCustomValidity("Passwords do not match");
+                pwdMatchError.textContent = "Passwords do not match";
+            }
+        });
+
+        // Add an event listener to the Password input to clear the error message when the user types
+        pwdInput.addEventListener("input", function () {
+            pwd2Input.setCustomValidity(""); // Clear custom validation message
+            pwdMatchError.textContent = ""; // Clear the error message
+        });
+
+        // Regular expression pattern
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+
+        // Get the email input element
+        var emailInput = document.getElementById("email");
+
+        // Add an event listener to validate the email when the input changes
+        emailInput.addEventListener("input", function () {
+            var emailValue = emailInput.value;
+
+            if (emailPattern.test(emailValue)) {
+                // The email matches the pattern
+                emailInput.setCustomValidity(""); // Clear any custom validation message
+            } else {
+                // The email does not match the pattern
+                emailInput.setCustomValidity("Please enter a valid email address from @byui.edu");
+            }
+        });  
+    </script>
+
+</body>
+
+</html>
