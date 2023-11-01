@@ -30,11 +30,11 @@ label.top {
     width: 150px;
 }
 form label.top input:required {
-    border-bottom: rgb(162, 33, 33) solid 6px;
+    border-left: rgb(162, 33, 33) solid 6px;
     
 }
 form label.top input:required:valid {
-    border-bottom:rgb(70, 135, 225)  solid 6px;
+    border-left:rgb(70, 135, 225)  solid 6px;
 
 }
 
@@ -54,6 +54,10 @@ form input.submitBtn {
     margin: 1em;
     width: 96%;
     max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    background-color: rgb(28, 74, 137);
 }
 
 
