@@ -1,3 +1,9 @@
+:root {
+    --border: #999;
+    --blue:rgb(70, 135, 225);
+    --darkblue: rgb(28, 74, 137);
+    --required; rgb(162, 33, 33);
+}
 div {
     margin: .25em;
 }
@@ -9,7 +15,7 @@ form label.top {
     font-weight: bold;
 }
 form label.top input {
-    border: solid 1px #999;
+    border: solid 1px var(--border);
     border-radius: 4px;
     padding: .75rem;
     color: #555;
@@ -30,11 +36,11 @@ label.top {
     width: 150px;
 }
 form label.top input:required {
-    border-left: rgb(162, 33, 33) solid 6px;
+    border-left: var(--required) solid 6px;
     
 }
 form label.top input:required:valid {
-    border-left:rgb(70, 135, 225)  solid 6px;
+    border-left:var(--blue)  solid 6px;
 
 }
 
@@ -47,7 +53,7 @@ label {
 
 form input.submitBtn {
     border: none;
-    background-color: rgb(70, 135, 225) ;
+    background-color: var(--blue);
     color: white;
     border-radius: 1rem;
     padding: 0.75rem 1.5rem;
@@ -57,7 +63,7 @@ form input.submitBtn {
 }
 
 form input.submitBtn:hover {
-    background-color: rgb(28, 74, 137);
+    background-color: var(--darkblue);
 }
 
 
