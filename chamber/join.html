@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isabel Yue">
+    <meta name="description" content="Isabel Yue WDD230 - Boise Chamber Of Commerce Site">
+    <title>Boise Chamber of Commerce Site - Join</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/boiseicon.ico">
+    <meta property="og:title" content="Isabel Yue WDD230 - Boise Chamber Of Commerce Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://boisedev.com/wp-content/uploads/2022/01/242618877_221224343364504_2663931937076728879_n.png">
+    <meta property="og:url" content="https://isabel-yue.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img class="logo" src="images/bosielogo.png" alt="">
+            <nav>
+                <button id="menu"></button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="join.html">Join Now</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
+                        <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
+                        <label for="position">Position*<input type="text" name="position" id="position" required
+                                pattern="[A-Za-z\s-]{7,}"
+                                title="Please enter at least seven alpha characters, hyphens, or spaces"></label>
+                        <label for="email">Email* <input type="email" name="email" id="email" required
+                                placeholder="example@gmail.com"></label>
+                        <label for="phone">Mobile Phone* <input type="tel" name="phone" id="phone" required></label>
+                        <label for="busname">Business Name* <input type="text" name="busname" id="busname"
+                                required></label>
+                    </fieldset>
+                    <fieldset>
+                        <div>Membership Level</div>
+                        <label><input type="radio" name="membershiplevel" value="npmembership">NP Membership</label>
+                        <label><input type="radio" name="membershiplevel" value="bronzemembership">Bronze
+                            Membership</label>
+                        <label><input type="radio" name="membershiplevel" value="silvermembership">Silver
+                            Membership</label>
+                        <label><input type="radio" name="membershiplevel" value="goldmembership">Gold Membership</label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="description">Business Description</label>
+                        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                    </fieldset>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" value="Submit Form">
+
+                </form>
+            </div>
+            <div >
+                <h1 class="benefits">Membership benefits</h1>
+                <div class="card">
+                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
+                    <p>Cost: Free</p><br>
+                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
+                        benefits
+                        to support your mission, including:</p>
+                    <ul>
+                        <li>Access to exclusive resources</li>
+                        <li>Networking opportunities with other non-profits</li>
+                        <li>Participation in community events</li>
+                        <li>Listing in our non-profit directory</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
+                    <p>Cost: Free</p><br>
+                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
+                        benefits
+                        to support your mission, including:</p>
+                    <ul>
+                        <li>Access to exclusive resources</li>
+                        <li>Networking opportunities with other non-profits</li>
+                        <li>Participation in community events</li>
+                        <li>Listing in our non-profit directory</li>
+                    </ul>
+                </div>
+                <div class="card">
+                   
+                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
+                    <p>Cost: Free</p><br>
+                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
+                        benefits
+                        to support your mission, including:</p>
+                    <ul>
+                        <li>Access to exclusive resources</li>
+                        <li>Networking opportunities with other non-profits</li>
+                        <li>Participation in community events</li>
+                        <li>Listing in our non-profit directory</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
+                    <p>Cost: Free</p><br>
+                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
+                        benefits
+                        to support your mission, including:</p>
+                    <ul>
+                        <li>Access to exclusive resources</li>
+                        <li>Networking opportunities with other non-profits</li>
+                        <li>Participation in community events</li>
+                        <li>Listing in our non-profit directory</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>Contact: <br>info@boisechambercommerce.org | (208) 432 1234</p>
+        <p>&copy; <span id="year"> </span> | Isabel Yue | Project for WDD230 </p>
+        <p> Last Modified: <span id="lastModified"> </span> </p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var timestampInput = document.getElementById("timestamp");
+            var currentDateTime = new Date();
+            timestampInput.value = currentDateTime.toISOString();
+        });
+    </script>
+</body>
+
+</html>
