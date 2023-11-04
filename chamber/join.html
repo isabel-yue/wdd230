@@ -9,7 +9,8 @@
     <title>Boise Chamber of Commerce Site - Join</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -38,19 +39,71 @@
         </div>
     </header>
     <main>
-        <div class="content">
+        <h1 >Our Membership benefits</h1>
+        <div class="joinContent">
+            <div class="benefits">
+                <div class="card">
+                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
+                    <p>Cost: Free</p><br>
+                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
+                        benefits to support your mission, including:</p>
+                    <ul>
+                        <li>Access to exclusive resources</li>
+                        <li>Networking opportunities with other non-profits</li>
+                        <li>Participation in community events</li>
+                        <li>Listing in our non-profit directory</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>2. Bronze Membership</h3>
+                    <p>Cost: $50 per year</p><br>
+                    <p>Our Bronze Membership is perfect for organizations looking for added support and opportunities:
+                    </p>
+                    <ul>
+                        <li>Access to all NP Membership benefits</li>
+                        <li>Priority registration for events</li>
+                        <li>Discounted rates on special training sessions</li>
+                        <li>Promotion in our newsletter</li>
+                    </ul>
+                </div>
+                <div class="card">
+
+                    <h3>3. Silver Membership</h3>
+                    <p>Cost: $100 per year</p><br>
+                    <p>Upgrade to our Silver Membership for enhanced benefits:</p>
+                    <ul>
+                        <li>All Bronze Membership benefits</li>
+                        <li>Increased exposure on our website</li>
+                        <li>Access to exclusive workshops</li>
+                        <li>Discounted rates on advertising opportunities</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>4. Gold Membership</h3>
+                    <p>Cost: $200 per year</p><br>
+                    <p>Elevate your organization's presence with our Gold level and enjoy premium benefits:</p>
+                    <ul>
+                        <li>All Silver Membership benefits</li>
+                        <li>Premium listing in our non-profit directory</li>
+                        <li>VIP access to all events and training</li>
+                        <li>Priority placement on our website</li>
+                    </ul>
+                </div>
+            </div>
             <div>
+                <h2>Become a Member with us!</h2>
                 <form method="get" action="thankyou.html">
                     <fieldset>
-                        <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
-                        <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
-                        <label for="position">Position*<input type="text" name="position" id="position" required
+                        <div>Personal Information</div>
+                        <label for="fname">First Name*<input class="top" type="text" name="fname" id="fname" required></label>
+                        <label for="lname">Last Name*<input class="top"type="text" name="lname" id="lname" required></label>
+                        <label for="position">Position*<input class="top"type="text" name="position" id="position" required
                                 pattern="[A-Za-z\s-]{7,}"
                                 title="Please enter at least seven alpha characters, hyphens, or spaces"></label>
-                        <label for="email">Email* <input type="email" name="email" id="email" required
+                        <label for="email">Email* <input class="top" type="email" name="email" id="email" required
                                 placeholder="example@gmail.com"></label>
-                        <label for="phone">Mobile Phone* <input type="tel" name="phone" id="phone" required></label>
-                        <label for="busname">Business Name* <input type="text" name="busname" id="busname"
+                        <label for="phone">Mobile Phone* <input class="top" type="tel" name="phone" id="phone" required></label>
+                        <label for="busname">Business Name* <input class="top" type="text" name="busname" id="busname"
                                 required></label>
                     </fieldset>
                     <fieldset>
@@ -63,70 +116,16 @@
                         <label><input type="radio" name="membershiplevel" value="goldmembership">Gold Membership</label>
                     </fieldset>
                     <fieldset>
+                        <div>Tell us briefly about your business...</div>
                         <label for="description">Business Description</label>
                         <textarea id="description" name="description" rows="4" cols="50"></textarea>
                     </fieldset>
                     <input type="hidden" id="timestamp" name="timestamp">
-                    <input type="submit" value="Submit Form">
+                    <input type="submit" value="Submit Application" class="submitBtn">
 
                 </form>
             </div>
-            <div >
-                <h1 class="benefits">Membership benefits</h1>
-                <div class="card">
-                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
-                    <p>Cost: Free</p><br>
-                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
-                        benefits
-                        to support your mission, including:</p>
-                    <ul>
-                        <li>Access to exclusive resources</li>
-                        <li>Networking opportunities with other non-profits</li>
-                        <li>Participation in community events</li>
-                        <li>Listing in our non-profit directory</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
-                    <p>Cost: Free</p><br>
-                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
-                        benefits
-                        to support your mission, including:</p>
-                    <ul>
-                        <li>Access to exclusive resources</li>
-                        <li>Networking opportunities with other non-profits</li>
-                        <li>Participation in community events</li>
-                        <li>Listing in our non-profit directory</li>
-                    </ul>
-                </div>
-                <div class="card">
-                   
-                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
-                    <p>Cost: Free</p><br>
-                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
-                        benefits
-                        to support your mission, including:</p>
-                    <ul>
-                        <li>Access to exclusive resources</li>
-                        <li>Networking opportunities with other non-profits</li>
-                        <li>Participation in community events</li>
-                        <li>Listing in our non-profit directory</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>1. NP Membership (Non-Profit Organizations)</h3>
-                    <p>Cost: Free</p><br>
-                    <p>This membership level is designed exclusively for non-profit organizations. Enjoy a range of
-                        benefits
-                        to support your mission, including:</p>
-                    <ul>
-                        <li>Access to exclusive resources</li>
-                        <li>Networking opportunities with other non-profits</li>
-                        <li>Participation in community events</li>
-                        <li>Listing in our non-profit directory</li>
-                    </ul>
-                </div>
-            </div>
+
 
 
         </div>

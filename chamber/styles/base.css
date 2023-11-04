@@ -1,12 +1,14 @@
 h1,
 h2,
 h3,
-a{
+h4,
+div,
+a {
     font-family: 'Heebo';
     color: #023047;
 }
 
-p{
+p {
     font-family: 'lato';
 }
 
@@ -14,9 +16,10 @@ p{
     padding: 0px;
 }
 
+
 li {
-    list-style: none;
-    text-align: center;
+    list-style-type: circle;
+    text-align: left;
 }
 
 li a {
@@ -39,6 +42,10 @@ a:visited {
 h1 {
     font-size: 24px;
     color: #023047;
+    padding: 20px;
+}
+
+h4 {
     padding: 30px;
 }
 
@@ -46,6 +53,7 @@ h1 {
     padding: 20px;
     font-size: 35px;
 }
+
 picture {
     width: 100%;
     height: auto;
@@ -106,12 +114,20 @@ picture {
 
 
 }
+
 p {
     display: inline-block;
 }
 
-.card {
-    margin: 20px;
+div.card {
+    padding: 20px;
+    border-left: 6px solid rgb(251, 133, 0);
+    margin: 1em;
+}
+
+
+fieldset {
+    padding: 20px;
 }
 
 
@@ -119,7 +135,8 @@ p {
 h2 {
     font-weight: 500;
     display: inline-block;
-    color: #023047;
+    color: rgb(251, 133, 0);
+    padding: 10px;
 }
 
 .view {
@@ -133,6 +150,7 @@ h2 {
     border-radius: 30px;
     color: white;
 }
+
 .attractions {
     padding: 20px;
     border-left: 6px solid rgb(251, 133, 0);
@@ -148,18 +166,59 @@ h2 {
     padding: 20px;
     border-left: 6px solid rgb(251, 133, 0);
 }
+
 #visit {
     border-style: outset;
     padding: 20px;
 }
+
 #visits {
     font-family: 'Heebo';
     font-size: 20px;
-   
+
 }
 
 .content {
     padding: 20px;
+}
+
+/*form*/
+form label {
+    display: block;
+    padding-top: 2em;
+    font-family: 'Heebo';
+}
+
+li {
+    text-align: left;
+
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #023047;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+form input.top {
+    display:block;
+
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: rgb(251, 133, 0);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1em;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    background-color: rgb(230, 125, 4)
 }
 
 footer {
@@ -176,7 +235,8 @@ table {
     margin: 20px 0;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
