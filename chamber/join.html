@@ -39,7 +39,7 @@
         </div>
     </header>
     <main>
-        <h1 >Our Membership benefits</h1>
+        <h1>Our Membership benefits</h1>
         <div class="joinContent">
             <div class="benefits">
                 <div class="card">
@@ -95,14 +95,17 @@
                 <form method="get" action="thankyou.html">
                     <fieldset>
                         <div>Personal Information</div>
-                        <label for="fname">First Name*<input class="top" type="text" name="fname" id="fname" required></label>
-                        <label for="lname">Last Name*<input class="top" type="text" name="lname" id="lname" required></label>
-                        <label for="position">Position*<input class="top" type="text" name="position" id="position" required
-                                pattern="[A-Za-z\s-]{7,}"
+                        <label for="fname">First Name*<input class="top" type="text" name="fname" id="fname"
+                                required></label>
+                        <label for="lname">Last Name*<input class="top" type="text" name="lname" id="lname"
+                                required></label>
+                        <label for="position">Position*<input class="top" type="text" name="position" id="position"
+                                required pattern="[A-Za-z\s-]{7,}"
                                 title="Please enter at least seven alpha characters, hyphens, or spaces"></label>
                         <label for="email">Email* <input class="top" type="email" name="email" id="email" required
                                 placeholder="example@gmail.com"></label>
-                        <label for="phone">Mobile Phone* <input class="top" type="tel" name="phone" id="phone" required></label>
+                        <label for="phone">Mobile Phone* <input class="top" type="tel" name="phone" id="phone"
+                                required></label>
                         <label for="busname">Business Name* <input class="top" type="text" name="busname" id="busname"
                                 required></label>
                     </fieldset>
@@ -138,6 +141,19 @@
             var timestampInput = document.getElementById("timestamp");
             var currentDateTime = new Date();
             timestampInput.value = currentDateTime.toISOString();
+        });
+
+        const positionInput = document.getElementById("position");
+
+        positionInput.addEventListener("input", function () {
+            const inputValue = positionInput.value;
+            const pattern = /^[A-Za-z\s-]{7,}$/;
+
+            if (pattern.test(inputValue)) {
+                positionInput.setCustomValidity(""); // Clear custom validation message
+            } else {
+                positionInput.setCustomValidity("Please enter at least seven alpha characters, hyphens, or spaces");
+            }
         });
     </script>
 </body>
