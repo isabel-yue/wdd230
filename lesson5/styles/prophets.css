@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body, h1  {
+    margin: 40px;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #0077b6;
+  }
+p  {
+    padding: 3px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  #cards {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+  
+    /* Desktop view: 4 cards in a row */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  
+  section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  #cards h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: #0077b6;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid;
+    box-shadow: 10px 10px #0077b6;
+  }
+  
+  #cards p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+main {
+    padding: 20px;
+ }
+
+h1 {
+    margin: auto;
+ }
+
+ footer {
+    font-family: 'Arial';
+    padding: 20px;
+ }
+  
+  /* Add a shadow to cards */
+  #cards .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query for mobile view: 1 card in a column */
+  @media (max-width: 768px) {
+    #cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
