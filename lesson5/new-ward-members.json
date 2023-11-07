@@ -1,0 +1,23 @@
+{
+    "familyName": "Thompson",
+    "date": "2023-11-22",
+    "number": 3,
+    "visitedByBishopric": "true",
+    "members": [
+        {
+            "name": "Klay Thompson",
+            "gender": "male",
+            "birthdate": "1990-3-21"
+        },
+        {
+            "name": "Emma Thompson",
+            "gender": "female",
+            "birthdate": "1995-8-11"
+        },
+        {
+            "name": "Woody Thompson",
+            "gender": "male",
+            "birthdate": "2022-7-9"
+        }
+    ]
+}
