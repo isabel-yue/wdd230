@@ -4,8 +4,7 @@
 const baseURL = "https://isabel-yue.github.io/wdd230/";
 
 // Step 3: Add a variable named linksURL
-const linksURL = "https://isabel-yue.github.io/wdd230//data/links.json";
-
+const linksURL = "https://isabel-yue.github.io/wdd230/data/links.json";
 
 async function getLinks() {
   const response = await fetch(linksURL);
