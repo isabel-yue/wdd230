@@ -1,0 +1,94 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url":"lesson1/holygrail.html",
+            "title":"Holygrail Layout"
+          },
+          {
+            "url":"lesson1/media-query.html",
+            "title":"Media Query"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url":"lesson2/bom.html",
+            "title":"DOM Manupulation"
+          },
+          {
+            "url":"lesson2/menu.html",
+            "title":"Hamburger Menu"
+          },
+          {
+            "url":"lesson2/design.html",
+            "title":"Design Principles"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url":"lesson3/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"lesson3/lazyload.html",
+            "title":"Lazy Load"
+          },
+          {
+            "url":"lesson3/responsive-images.html",
+            "title":"Responsive Images"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url":"https://codepen.io/isabelyue/pen/poGvGOo",
+            "title":"CSS Pseudo-Classes"
+          },
+          {
+            "url":"lesson4/images/CSS_Combinators.png",
+            "title":"CSS Combinators"
+          },
+          {
+            "url":"lesson4/tablebuild.html",
+            "title":"Table"
+          },
+          {
+            "url":"lesson4/index.html",
+            "title":"HTML Web From"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url":"https://codepen.io/isabelyue/pen/mdvRYjQ",
+            "title":"CSS Pseudo-Element"
+          },
+          {
+            "url":"lesson5/new-ward-members.json",
+            "title":"JSON"
+          },
+          {
+            "url":"lesson5/prophets.html",
+            "title":"The Fetch API"
+          },
+          {
+            "url":"lesson5/weather.html",
+            "title":"Weather"
+          }
+        ]
+      }
+      
+    ]
+    }

@@ -158,6 +158,10 @@ iframe {
     max-width: 100%;
 }
 
+.figure {
+ padding-left: 0px;
+}
+
 /* small navigation view */
 #menu {
 	font-size: 1.5rem;

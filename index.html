@@ -52,22 +52,30 @@
         <div class="grid">
             <section class="card">
                 <h3>Learning Activities</h3>
-                <ul>
-                    <li>Week 01: <a href="lesson1/week1/cssLayout/holygrail.html"> Holygrail </a> | <a
-                            href="lesson1/week1/mediaQuery/media-query.html"> Media Query </a></li>
-                    <li>Week 02:<a href="lesson2/bom.html">DOM Manipulation</a> | <a href="lesson2/menu.html">Hamburger
-                            Menu</a> | <a href="lesson2/design.html"> Design Principles</a></li>
-                    <li>Week 03:<a href="lesson3/images/landscape.webp">WebP</a> | <a href="lesson3/lazyload.html">Lazy
-                            Load</a> | <a href="lesson3/responsive-images.html"> Responsive Images</a></li>
-                    <li>Week 04:<a href="https://codepen.io/isabelyue/pen/poGvGOo"> CSS Pseudo-Classes</a> | <a href="lesson4/images/CSS_Combinators.png"> CSS Combinators</a> | <a href="lesson4/tablebuild.html"> Table</a> | <a href="lesson4/index.html">HTML Web From</a></li>
-                    <li>Week 05:<a href="https://codepen.io/isabelyue/pen/mdvRYjQ"> CSS Pseudo-Element</a> | <a href="lesson5/new-ward-members.json"> JSON</a> | <a href="lesson5/prophets.html"> The Fetch API</a> | <a href="lesson5/weather.html"></a></li>
-                    <li>Week 06:<a href="#"></a></li>
-                </ul>
+                <div id="learning-activity">
+                    <ul>
+                        <li>Week 01: <a href="lesson1/holygrail.html"> Holygrail Layout</a> | <a
+                                href="lesson1/media-query.html"> Media Query </a></li>
+                        <li>Week 02:<a href="lesson2/bom.html">DOM Manipulation</a> | <a href="lesson2/menu.html">Hamburger
+                                Menu</a> | <a href="lesson2/design.html"> Design Principles</a></li>
+                        <li>Week 03:<a href="lesson3/images/landscape.webp">WebP</a> | <a href="lesson3/lazyload.html">Lazy
+                                Load</a> | <a href="lesson3/responsive-images.html"> Responsive Images</a></li>
+                        <li>Week 04:<a href="https://codepen.io/isabelyue/pen/poGvGOo"> CSS Pseudo-Classes</a> | <a href="lesson4/images/CSS_Combinators.png"> CSS Combinators</a> | <a href="lesson4/tablebuild.html"> Table</a> | <a href="lesson4/index.html">HTML Web From</a></li>
+                        <li>Week 05:<a href="https://codepen.io/isabelyue/pen/mdvRYjQ"> CSS Pseudo-Element</a> | <a href="lesson5/new-ward-members.json"> JSON</a> | <a href="lesson5/prophets.html"> The Fetch API</a> | <a href="lesson5/weather.html"> Weather</a></li>
+                        <li>Week 06:<a href="#"></a></li>
+                    </ul>
+            </div>
             </section>
             <section class="card">
                 <h3>Information</h3>
                 <p>Rexburg, Idaho</p>
-                <p>76 F, Sunny</p>
+                <div class="figure">
+                <p><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
                 <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
         </div>
@@ -85,6 +93,8 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/visits.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>
