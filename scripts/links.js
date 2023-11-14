@@ -25,7 +25,7 @@ function displayLinks(weeks) {
 
     // Create a span to hold the week title
     const weekTitle = document.createElement("span");
-    weekTitle.textContent = week.week;
+    weekTitle.textContent = `${week.week}: `;
 
     // Append the week title to the list item
     listItem.appendChild(weekTitle);
@@ -42,9 +42,9 @@ function displayLinks(weeks) {
       // Append the anchor to the links span
       linksSpan.appendChild(anchor);
 
-      // If it's not the last link, add a comma and space
+      // If it's not the last link, add a pipe separator
       if (index < week.links.length - 1) {
-        linksSpan.appendChild(document.createTextNode(", "));
+        linksSpan.appendChild(document.createTextNode(" | "));
       }
     });
 
