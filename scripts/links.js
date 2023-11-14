@@ -3,11 +3,16 @@
 const baseURL = "https://isabel-yue.github.io/wdd230/";
 const linksURL = "https://isabel-yue.github.io/wdd230/data/links.json";
 
+
 async function getLinks() {
-  const response = await fetch(linksURL);
-  const data = await response.json();
-  displayLinks(data);
-}
+    try {
+      const response = await fetch(linksURL);
+      const data = await response.json();
+      displayLinks(data);
+    } catch (error) {
+      console.error("Error fetching or parsing JSON:", error);
+    }
+  }
 
 function displayLinks(weeks) {
   const learningActivitySection = document.getElementById("learning-activity");
