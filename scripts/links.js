@@ -30,26 +30,20 @@ function displayLinks(weeks) {
     // Append the week title to the list item
     listItem.appendChild(weekTitle);
 
-    // Create a span to hold all the links for the week
-    const linksSpan = document.createElement("span");
-
     // Loop through each link in the week
     week.links.forEach((link, index) => {
       const anchor = document.createElement("a");
       anchor.href = link.url.startsWith("http") ? link.url : baseURL + link.url;
       anchor.textContent = link.title;
 
-      // Append the anchor to the links span
-      linksSpan.appendChild(anchor);
+      // Append the anchor to the list item
+      listItem.appendChild(anchor);
 
       // If it's not the last link, add a pipe separator
       if (index < week.links.length - 1) {
-        linksSpan.appendChild(document.createTextNode(" | "));
+        listItem.appendChild(document.createTextNode(" | "));
       }
     });
-
-    // Append the links span to the list item
-    listItem.appendChild(linksSpan);
 
     // Append the list item to the week element
     weekElement.appendChild(listItem);
