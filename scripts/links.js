@@ -7,7 +7,8 @@ async function getLinks() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
+    console.log("Received data:", data);
+    displayLinks(data.weeks); // Assuming 'weeks' is the key containing the array of weeks
   } catch (error) {
     console.error("Error fetching or parsing JSON:", error);
   }
@@ -19,14 +20,10 @@ function displayLinks(weeks) {
   // Clear existing content
   learningActivitySection.innerHTML = "";
 
-  // Ensure that 'weeks' is an array with the expected structure
-  if (Array.isArray(weeks) && weeks.length > 0 && weeks[0].hasOwnProperty("week") && weeks[0].hasOwnProperty("links")) {
+  // Ensure 'weeks' is an array
+  if (Array.isArray(weeks)) {
     // Loop through each week
     weeks.forEach((week) => {
-      const weekElement = document.createElement("div");
-      weekElement.classList.add("week");
-
-      // Create a single list item for the week with its links
       const listItem = document.createElement("li");
 
       // Create a span to hold the week title
@@ -35,9 +32,6 @@ function displayLinks(weeks) {
 
       // Append the week title to the list item
       listItem.appendChild(weekTitle);
-
-      // Create a span to hold all the links for the week
-      const linksSpan = document.createElement("span");
 
       // Loop through each link in the week
       week.links.forEach((link, index) => {
@@ -54,14 +48,11 @@ function displayLinks(weeks) {
         }
       });
 
-      // Append the list item to the week element
-      weekElement.appendChild(listItem);
-
-      // Append week element to the learning activity section
-      learningActivitySection.appendChild(weekElement);
+      // Append the list item to the learning activity section
+      learningActivitySection.appendChild(listItem);
     });
   } else {
-    console.error("Invalid data format. Expected an array of weeks with the correct structure.");
+    console.error("Invalid data format or empty data. Expected an array of weeks with the correct structure.");
   }
 }
 
