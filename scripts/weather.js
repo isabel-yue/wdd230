@@ -20,8 +20,9 @@ async function apiFetch() {
             // Output data to the console for testing
             console.log(data);
 
-            // Call the displayResults function here (to be implemented)
+            // Assuming you have a function to update the HTML elements
             displayResults(data);
+
         } else {
             // Throw an error with the response text
             throw new Error(await response.text());
