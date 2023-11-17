@@ -15,13 +15,13 @@ fetch('data/members.json')
         nameElement.textContent = member.name;
 
         const addressElement = document.createElement('p');
-        addressElement.textContent = `Address: ${member.address}`;
+        addressElement.textContent = `${member.address}`;
 
         const phoneElement = document.createElement('p');
-        phoneElement.textContent = `Phone: ${member.phone}`;
+        phoneElement.textContent = ` ${member.phone}`;
 
         const websiteElement = document.createElement('p');
-        websiteElement.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
+        websiteElement.innerHTML = `<a href="${member.website}" target="_blank">${member.website}</a>`;
 
         const membershipElement = document.createElement('p');
         membershipElement.textContent = `Membership Level: ${member.membershipLevel}`;
