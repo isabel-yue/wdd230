@@ -327,3 +327,63 @@ tr:nth-child(even) {
 .open li a {
     display: block;
 }
+
+
+/*directory*/
+
+.switch {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: white;
+	text-align: center;
+}
+
+.switch button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+#members-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  
+  .member-card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    width: auto; /* Default width for list view */
+  }
+
+
+  /* Styles for the grid view */
+  #members-container:not(.list) .member-card {
+    width: 100%; /* Set width for grid view */ 
+  }
+  
+
+  .member-card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto;    /* Maintain the image's aspect ratio */
+    display: block;  /* Remove any extra spacing below the image */
+    margin-bottom: 10px; /* Add some space below the image */
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+  #members-container.grid-view .member-card h2,
+  #members-container.grid-view .member-card p {
+    /*grid-column: auto;  Reset grid column for grid view */
+    grid-column: span 1;
+  }
+  
+  #members-container > .member-card:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for list view */
+  }
+  
+ 
+
+  

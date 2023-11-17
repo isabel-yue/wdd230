@@ -119,6 +119,31 @@
        
     }
 
-   
+   /*directory*/
+
+   .member-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; /* Adjust the gap between columns */
+  }
+  
+  
+  
+  #members-container.grid-view .member-card {
+    width: 300px; /* Set width for grid view */
+    grid-template-columns: auto; /* Reset grid columns for grid view */
+  }
+  
+  #members-container.grid-view .member-card h2,
+  #members-container.grid-view .member-card p {
+    /*grid-column: auto;  Reset grid column for grid view */
+    grid-column: span 1;
+  }
+
+  /* Styles specific to the list view within #members-container */
+  #members-container > .member-card:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for list view */
+  }
+
 
 }
