@@ -378,8 +378,9 @@ tr:nth-child(even) {
   #members-container.grid-view .member-card p {
     /*grid-column: auto;  Reset grid column for grid view */
     grid-column: span 1;
+    
   }
-  
+
   #members-container > .member-card:nth-child(even) {
     background-color: #f9f9f9; /* Zebra striping for list view */
   }
