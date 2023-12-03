@@ -146,22 +146,21 @@ function displayForecast(data) {
     .catch(error => {
       console.error(error.message);
     });
-
-	  // Function to close the meet and greet banner
-	  function closeMeetAndGreetBanner() {
+	
+	function closeMeetAndGreetBanner() {
 		document.getElementById('meetAndGreetBanner').style.display = 'none';
 	  }
   
-	  // Function to check if today is Monday, Tuesday, or Wednesday
 	  function isMeetAndGreetDay() {
 		const today = new Date().getDay();
 		return today >= 1 && today <= 3; // Monday is 1, Tuesday is 2, Wednesday is 3
 	  }
   
-	  // Function to display the meet and greet banner if it's the right day
 	  function displayMeetAndGreetBanner() {
 		if (isMeetAndGreetDay()) {
 		  document.getElementById('meetAndGreetBanner').style.display = 'block';
+		} else {
+		  document.getElementById('meetAndGreetBanner').style.display = 'none';
 		}
 	  }
   
