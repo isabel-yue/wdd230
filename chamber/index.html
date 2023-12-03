@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/boiseicon.ico">
-    
+
     <meta property="og:title" content="Isabel Yue WDD230 - Boise Chamber Of Commerce Site">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -47,46 +47,49 @@
                 <img class="hero" src="images/heroimage.webp" alt="" loading="lazy" width="1440" height="960">
             </picture>
             <div class="action">
-                <h1>Become the member of <br> Boise Chamber of Commerce Today</h1>
+                <h1>Become the member of <br> Boise Chamber of Commerce Today</h1> <br>
                 <p class="description">Join the Boise Chamber of Commerce to unlock countless opportunities for
-                    networking, growth, and success!</p>
+                    networking, growth, and success!</p><br>
+                    <button class="join"><a href="join.html"></a>Join Now</button>
             </div>
-            <div class="join">Join Now</div>
+            
         </div>
+        <div id="meetAndGreetBanner" >
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p><br>
+            <button onclick="closeMeetAndGreetBanner()">Close</button>
+          </div>
         <div class="grid">
             <section class="card">
-                <h2>Current Events</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio officia, similique sit illo ea
-                    impedit,
-                    quo recusandae reprehenderit voluptate iure debitis error ipsum esse, unde provident atque pariatur
-                    aperiam sunt!</p>
-                <div class="view"> View All</div>
+                <h2>Current Event</h2>
+                <div class="event">
+                    <h2>TED Talk for Start Up Business</h2><br>
+                    <p class="event-date">Date: November 15, 2023</p><br>
+                    <p>Time: 9:00 AM - 12:00 PM</p><br>
+                    <p>Location: Boise Convention Center</p><br>
+                    <p>Description:Come and learn more about how to make your start up successful!</p>
+                </div>
+                
             </section>
             <section class="card">
-                <h2>Weathers</h2><br>
-                <p>Boise, Idaho</p> 
+                <h2 class="weather">Weathers</h2><br>
+                <p>Boise, Idaho</p>
                 <div class="figure">
-                <p><span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <p><span id="temp-forecast"></span></p>
+                    <p>Current Temperature: <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption id="weather-description"></figcaption>
+                    </figure>
+                    <p>3-Day Temperature Forecast:</p>
+                    <ul id="forecast-list"></ul>
+                </div>
             </section>
+            
+        </div>
+        
+        <div class="spotlight">
             <section class="card">
                 <h2>Company Spotlights</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio officia, similique sit illo ea
-                    impedit,
-                    quo recusandae reprehenderit voluptate iure debitis error ipsum esse, unde provident atque pariatur
-                    aperiam sunt!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio officia, similique sit illo ea
-                    impedit,
-                    quo recusandae reprehenderit voluptate iure debitis error ipsum esse, unde provident atque pariatur
-                    aperiam sunt!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio officia, similique sit illo ea
-                    impedit,
-                    quo recusandae reprehenderit voluptate iure debitis error ipsum esse, unde provident atque pariatur
-                    aperiam sunt!</p>
+                <div id="spotlight-advertisements" class="spotlight-grid"></div>
             </section>
         </div>
     </main>
